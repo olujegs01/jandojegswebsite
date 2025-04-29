@@ -1,24 +1,34 @@
+'use client';
+
+import React from 'react';
 import '../../styles/leadership.css';
 
 export default function LeadershipPage() {
   return (
-    <section className="leadership-section">
-      <h1>Meet the Team</h1>
-      <div className="leadership-cards">
-        <div className="leadership-card">
-          <img src="https://via.placeholder.com/150" alt="Team Member" className="team-img" />
+    <div className="leadership-container">
+      <h1>Leadership</h1>
+      <p>Meet the visionary team behind Jandojegs.</p>
+
+      <div className="leadership-members">
+        <div className="member">
           <h2>John Doe</h2>
-          <p>CEO & Founder</p>
-          <p>John is the visionary behind Jandojegs, leading the company towards revolutionizing logistics through AI-driven solutions.</p>
+          <p>Founder & CEO</p>
+          <p>John leads the team with a vision for innovation in logistics.</p>
         </div>
-        <div className="leadership-card">
-          <img src="https://via.placeholder.com/150" alt="Team Member" className="team-img" />
+
+        <div className="member">
           <h2>Jane Smith</h2>
           <p>COO</p>
-          <p>Jane oversees operations and ensures that our logistics services are executed smoothly and efficiently.</p>
+          <p>Jane ensures smooth operations across all teams, optimizing delivery systems.</p>
         </div>
-        <!-- Add more team members as needed -->
+
+        <div className="member">
+          <h2>Alex Brown</h2>
+          <p>CTO</p>
+          <p>Alex drives the technology behind our AI and logistics solutions.</p>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }
+
